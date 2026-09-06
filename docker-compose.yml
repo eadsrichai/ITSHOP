@@ -1,0 +1,40 @@
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: itshop-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: itshop
+      MARIADB_USER: itshop_user
+      MARIADB_PASSWORD: itshop_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      # ไฟล์ .sql ในโฟลเดอร์นี้จะถูกรันอัตโนมัติ "ครั้งแรกครั้งเดียว" ตอนสร้าง volume ใหม่
+      # ถ้าแก้ schema แล้วอยากให้รันใหม่ ต้อง docker compose down -v ก่อน
+      - ./database:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    image: adminer:latest
+    container_name: itshop-adminer
+    restart: unless-stopped
+    environment:
+      # เติมชื่อเซิร์ฟเวอร์ให้ในช่อง Server ตอนล็อกอินอัตโนมัติ
+      # ถ้าไม่ตั้งค่านี้ Adminer จะเติมคำว่า "db" มาให้ แล้วจะขึ้น error
+      #   php_network_getaddresses: getaddrinfo for db failed: Name does not resolve
+      # เพราะในเครือข่ายของ Docker ฐานข้อมูลตัวนี้ชื่อ "mariadb" ตามชื่อบริการข้างบน
+      ADMINER_DEFAULT_SERVER: mariadb
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mariadb
+
+volumes:
+  mariadb_data:
