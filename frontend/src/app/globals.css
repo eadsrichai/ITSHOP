@@ -1,0 +1,33 @@
+/* CSS ของโปรเจคเราเอง — ต้อง import ไว้ "หลัง" Bootstrap ใน layout.tsx เพื่อให้ทับค่าได้ */
+
+body {
+  background-color: #f6f7f9;
+  /* ฟอนต์ไทยที่มีอยู่ในเครื่องทั่วไป ถ้าไม่มีจะไล่ลงไปตัวถัดไปเรื่อย ๆ */
+  font-family: "Noto Sans Thai", "Sarabun", "Segoe UI", system-ui, sans-serif;
+}
+
+/* ให้ footer อยู่ล่างสุดเสมอ แม้เนื้อหาในหน้าจะสั้น */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-shell > main {
+  flex: 1;
+}
+
+/* การ์ดสินค้าขยับขึ้นเล็กน้อยเมื่อเอาเมาส์ชี้ */
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* ตารางในหน้าหลังบ้าน ไม่ให้ตัวหนังสือขึ้นบรรทัดใหม่จนอ่านยาก */
+.table-nowrap td,
+.table-nowrap th {
+  white-space: nowrap;
+}
