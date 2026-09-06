@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="เราเตอร์ Wi-Fi 6 AX1800">
+  <rect width="400" height="300" fill="#eaf2f6"/>
+
+    <rect x="72" y="132" width="256" height="76" rx="12" fill="#cfe4ec" stroke="#2b7d95" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="128" y1="132" x2="104" y2="72" stroke="#2b7d95" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="272" y1="132" x2="296" y2="72" stroke="#2b7d95" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="112" cy="170" r="7" fill="#2b7d95"/>
+    <circle cx="140" cy="170" r="7" fill="#2b7d95"/>
+    <circle cx="168" cy="170" r="7" fill="#2b7d95"/>
+    <line x1="216" y1="186" x2="304" y2="186" stroke="#2b7d95" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="272" text-anchor="middle" font-family="'Sarabun','Noto Sans Thai',system-ui,sans-serif" font-size="17" fill="#2b7d95">เราเตอร์ Wi-Fi 6 AX1800</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="เมาส์ไร้สาย Logi M331 Silent">
+  <rect width="400" height="300" fill="#eef4fb"/>
+
+    <path d="M200 46c30 0 48 22 48 52v42c0 30-18 52-48 52s-48-22-48-52V98c0-30 18-52 48-52z" fill="#c8dcf0" stroke="#3d6ea8" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="200" y1="60" x2="200" y2="96" stroke="#3d6ea8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="192" y="66" width="16" height="26" rx="8" stroke="#3d6ea8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="272" text-anchor="middle" font-family="'Sarabun','Noto Sans Thai',system-ui,sans-serif" font-size="17" fill="#3d6ea8">เมาส์ไร้สาย Logi M331 Silent</text>
+</svg>

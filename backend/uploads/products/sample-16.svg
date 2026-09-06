@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="หูฟังเกมมิ่ง 7.1 มีไมค์">
+  <rect width="400" height="300" fill="#fbeef1"/>
+
+    <path d="M110 168v-24c0-50 40-90 90-90s90 40 90 90v24" stroke="#a8425c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="80" y="150" width="46" height="76" rx="16" fill="#f0d3da" stroke="#a8425c" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="274" y="150" width="46" height="76" rx="16" fill="#f0d3da" stroke="#a8425c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M126 208h22c8 0 14 6 14 14v18" stroke="#a8425c" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="272" text-anchor="middle" font-family="'Sarabun','Noto Sans Thai',system-ui,sans-serif" font-size="17" fill="#a8425c">หูฟังเกมมิ่ง 7.1 มีไมค์</text>
+</svg>

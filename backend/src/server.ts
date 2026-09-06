@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "node:path";
 
 // ต้องโหลด .env ก่อน import โมดูลอื่นที่อ่านค่า process.env
 dotenv.config();
@@ -22,7 +23,7 @@ const CORS_ORIGIN = process.env.CORS_ORIGIN ?? "http://localhost:3000";
 app.use(cors({ origin: CORS_ORIGIN }));
 
 app.use(express.json()); // อ่าน body ที่ส่งมาเป็น JSON
-
+app.use("/uploads", express.static(path.join(__dirname, "..", "uploads")));
 // ------------------------------------------------------------------
 // เส้นทาง API
 // ------------------------------------------------------------------
